@@ -4,6 +4,8 @@
 
 # Environment variables
 .env
+.env.dev
+.env.test
 .env.local
 .env.*.local
 .env.test.local
@@ -61,3 +63,4 @@ coverage/
 # Ignore profiler data
 var/cache/dev/profiler/
 
+/.env.dev
