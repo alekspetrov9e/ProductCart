@@ -1,25 +1,63 @@
+# ======================================
+# Symfony / PHP Project .gitignore
+# ======================================
 
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.test.local
+
+# Symfony cache and logs
 /var/
 /vendor/
-###< symfony/framework-bundle ###
 
-###> phpunit/phpunit ###
+# Composer PHAR
+/composer.phar
+
+# PHPUnit
 /phpunit.xml
-.phpunit.result.cache
-###< phpunit/phpunit ###
+/phpunit.xml.dist
+/build/
+/coverage/
 
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
+# IDE config
+.idea/
+.vscode/
 
-###> symfony/asset-mapper ###
-/public/assets/
-/assets/vendor/
-###< symfony/asset-mapper ###
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if using Encore, Webpack, etc.)
+/node_modules/
+/public/build/
+/public/bundles/
+
+# Yarn / npm logs
+yarn-error.log
+npm-debug.log
+
+# Other logs or temp files
+*.log
+*.cache
+*.tmp
+*.temp
+*.xml
+
+# Uploaded files (if any)
+public/uploads/
+
+# Ignore local database (if SQLite is used)
+var/data.db
+var/data.db-journal
+
+# Local override files
+/config/secrets/prod/prod.decrypt.private.php
+
+# Ignore coverage reports
+coverage/
+
+# Ignore profiler data
+var/cache/dev/profiler/
+
